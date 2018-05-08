@@ -12,7 +12,7 @@ pipeline {
         stage('Testing Stage') {
             steps {
 
-                    bat 'sh -c mvn clear'
+                    bat 'sh -c mvn'
                 }
 
         }
