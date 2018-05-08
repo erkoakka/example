@@ -9,7 +9,7 @@ pipeline {
         stage('Compile Stage') {
             steps
                  {
-                    sh 'mvn clean compile'
+                    bat 'sh -c mvn clean compile'
                 }
 
         }
@@ -18,15 +18,14 @@ pipeline {
         stage('Testing Stage') {
             steps {
 
-                    sh 'mvn test'
+                    bat 'sh -c mvn test'
                 }
 
         }
 
         stage('Deployment Stage') {
             steps {
-
-                    sh 'mvn deploy'
+                    bat 'sh -c mvn deploy'
                 }
 
         }
