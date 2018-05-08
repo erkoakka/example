@@ -6,13 +6,7 @@ pipeline {
     }
 
     stages {
-        stage('Compile Stage') {
-            steps
-                 {
-                    bat 'sh -c mvn validate'
-                }
 
-        }
 
 
         stage('Testing Stage') {
@@ -23,11 +17,5 @@ pipeline {
 
         }
 
-        stage('Deployment Stage') {
-            steps {
-                    bat 'sh -c mvn deploy'
-                }
-
-        }
     }
 }
