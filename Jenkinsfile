@@ -9,7 +9,7 @@ pipeline {
         stage('Compile Stage') {
             steps
                  {
-                    bat 'sh -c mvn clean compile'
+                    bat 'sh -c mvn validate'
                 }
 
         }
