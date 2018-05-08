@@ -8,5 +8,16 @@
     <artifactId>example</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <build>
+        <defaultGoal>validate</defaultGoal>
+    </build>
+
+
+
+
+
+
+
+
 
 </project>
